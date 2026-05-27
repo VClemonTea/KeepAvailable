@@ -1,6 +1,10 @@
+# IDE and File System
 .DS_Store
 .idea
+.fleet
 
+# AI
+.claude
 CLAUDE.md
 
 
