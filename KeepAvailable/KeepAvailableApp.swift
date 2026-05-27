@@ -1,10 +1,3 @@
-//
-//  KeepAvailableApp.swift
-//  KeepAvailable
-//
-//  Created by Lemoncha on 2026/5/27.
-//
-
 import SwiftUI
 
 @main
@@ -13,5 +6,7 @@ struct KeepAvailableApp: App {
         WindowGroup {
             ContentView()
         }
+        .defaultSize(width: 400, height: 420)
+        .windowResizability(.contentSize)
     }
 }
