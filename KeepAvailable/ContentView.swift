@@ -20,6 +20,7 @@ struct ContentView: View {
         .frame(minWidth: 360, maxWidth: 420, minHeight: 370)
         .onReceive(timer) { date in
             now = date
+            viewModel.checkAccessibilityPermission()
         }
         .onAppear {
             viewModel.checkAccessibilityPermission()

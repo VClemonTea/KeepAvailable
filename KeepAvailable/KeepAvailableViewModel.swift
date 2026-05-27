@@ -35,6 +35,11 @@ final class KeepAvailableViewModel {
     func requestAccessibilityPermission() {
         let options = [kAXTrustedCheckOptionPrompt.takeRetainedValue() as String: true]
         hasAccessibilityPermission = AXIsProcessTrustedWithOptions(options as CFDictionary)
+        guard !hasAccessibilityPermission else { return }
+        let urlString = "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Privacy_Accessibility"
+        if let url = URL(string: urlString) {
+            NSWorkspace.shared.open(url)
+        }
     }
 
     func start() {
