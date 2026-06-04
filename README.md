@@ -29,12 +29,12 @@ Unlike mouse jigglers or hardware dongles, Keep Available is purely software-bas
 
 ### Download (Recommended)
 
-Download the latest release from the [Releases](https://github.com/lemoncha/KeepAvailable/releases) page. Drag `KeepAvailable.app` to your `Applications` folder.
+Download the latest release from the [Releases](https://github.com/bennettxxbb/KeepAvailable/releases) page. Drag `KeepAvailable.app` to your `Applications` folder.
 
 ### Build from Source
 
 ```bash
-git clone https://github.com/lemoncha/KeepAvailable.git
+git clone https://github.com/bennettxxbb/KeepAvailable.git
 cd KeepAvailable
 DEVELOPER_DIR=/Applications/Xcode.app xcodebuild -project KeepAvailable.xcodeproj -scheme KeepAvailable -destination 'platform=macOS' build
 ```

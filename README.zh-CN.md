@@ -29,12 +29,12 @@
 
 ### 直接下载（推荐）
 
-从 [Releases](https://github.com/lemoncha/KeepAvailable/releases) 页面下载最新版本，将 `KeepAvailable.app` 拖入 `应用程序` 文件夹。
+从 [Releases](https://github.com/bennettxxbb/KeepAvailable/releases) 页面下载最新版本，将 `KeepAvailable.app` 拖入 `应用程序` 文件夹。
 
 ### 从源码构建
 
 ```bash
-git clone https://github.com/lemoncha/KeepAvailable.git
+git clone https://github.com/bennettxxbb/KeepAvailable.git
 cd KeepAvailable
 DEVELOPER_DIR=/Applications/Xcode.app xcodebuild -project KeepAvailable.xcodeproj -scheme KeepAvailable -destination 'platform=macOS' build
 ```
